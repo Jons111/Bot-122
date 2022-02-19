@@ -12,5 +12,11 @@ async def bot_start(message: types.Message):
     vaqt = datetime.datetime.now()
     baza.user_qoshish(ismi=ism,username=username,tg_id=tg_id,vaqt=vaqt)
 
+
+
+
+
+
+
     await message.answer(f"Salom, {message.from_user.full_name}   Wiki botga hush kelibsiz."
                          f"Bo'limlardan birini tanlang yoki o'zingizga kerakli so'zni kiriting!", reply_markup=bolimlar_buttons)
